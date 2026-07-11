@@ -1,424 +1,417 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2822
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\margl1440\margr1440\vieww29200\viewh17840\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-\f0\fs24 \cf0 *\{\
-    margin:0;\
-    padding:0;\
-    box-sizing:border-box;\
-\}\
-\
-body\{\
-    font-family:'Poppins',sans-serif;\
-    min-height:100vh;\
-    overflow:hidden;\
-    display:flex;\
-    justify-content:center;\
-    align-items:center;\
-\
-    background:linear-gradient(\
-        180deg,\
-        #06162f,\
-        #0a2956,\
-        #103b74,\
-        #184f96\
-    );\
-\}\
-\
-/* ---------- STARS ---------- */\
-\
-.stars\{\
-    position:fixed;\
-    inset:0;\
-    pointer-events:none;\
-\}\
-\
-.stars::before,\
-.stars::after\{\
-\
-    content:"";\
-\
-    position:absolute;\
-\
-    inset:0;\
-\
-    background-image:\
-    radial-gradient(white 1px,transparent 1px),\
-    radial-gradient(#8ecbff 1px,transparent 1px);\
-\
-    background-size:90px 90px;\
-\
-    opacity:.45;\
-\
-    animation:twinkle 5s infinite alternate;\
-\}\
-\
-.stars::after\{\
-\
-    background-size:140px 140px;\
-\
-    opacity:.25;\
-\
-    animation-duration:8s;\
-\}\
-\
-@keyframes twinkle\{\
-\
-    from\{\
-\
-        opacity:.2;\
-\
-    \}\
-\
-    to\{\
-\
-        opacity:.65;\
-\
-    \}\
-\
-\}\
-\
-/* ---------- MOON ---------- */\
-\
-.moon\{\
-\
-    position:absolute;\
-\
-    top:70px;\
-\
-    right:70px;\
-\
-    width:120px;\
-\
-    height:120px;\
-\
-    border-radius:50%;\
-\
-    background:#fff9d9;\
-\
-    box-shadow:\
-\
-    0 0 40px #fff,\
-\
-    0 0 90px #ffeaa7;\
-\
-\}\
-\
-/* ---------- GLASS CARD ---------- */\
-\
-.container\{\
-\
-    width:min(92%,470px);\
-\
-    padding:40px;\
-\
-    border-radius:28px;\
-\
-    background:rgba(255,255,255,.08);\
-\
-    backdrop-filter:blur(18px);\
-\
-    border:1px solid rgba(255,255,255,.15);\
-\
-    text-align:center;\
-\
-    z-index:20;\
-\
-    animation:card 1s ease;\
-\}\
-\
-@keyframes card\{\
-\
-    from\{\
-\
-        opacity:0;\
-\
-        transform:translateY(40px);\
-\
-    \}\
-\
-    to\{\
-\
-        opacity:1;\
-\
-        transform:translateY(0);\
-\
-    \}\
-\
-\}\
-\
-h1\{\
-\
-    color:white;\
-\
-    font-size:2rem;\
-\
-    margin-bottom:15px;\
-\
-\}\
-\
-.subtitle\{\
-\
-    color:#c7e6ff;\
-\
-    margin-bottom:35px;\
-\
-    line-height:1.6;\
-\
-\}\
-\
-/* ---------- BUTTON ---------- */\
-\
-button\{\
-\
-    border:none;\
-\
-    cursor:pointer;\
-\
-    padding:18px 40px;\
-\
-    border-radius:60px;\
-\
-    font-size:18px;\
-\
-    font-weight:bold;\
-\
-    color:white;\
-\
-    background:linear-gradient(135deg,#4ea7ff,#245fff);\
-\
-    transition:.35s;\
-\
-    box-shadow:\
-\
-    0 0 30px rgba(84,165,255,.5);\
-\
-    animation:pulse 2s infinite;\
-\}\
-\
-button:hover\{\
-\
-    transform:translateY(-4px) scale(1.04);\
-\
-    box-shadow:\
-\
-    0 0 40px rgba(84,165,255,.8);\
-\
-\}\
-\
-@keyframes pulse\{\
-\
-    0%\{\
-\
-        transform:scale(1);\
-\
-    \}\
-\
-    50%\{\
-\
-        transform:scale(1.03);\
-\
-    \}\
-\
-    100%\{\
-\
-        transform:scale(1);\
-\
-    \}\
-\
-\}\
-\
-#quoteBox\{\
-\
-    margin-top:35px;\
-\
-    min-height:170px;\
-\
-\}\
-\
-#quote\{\
-\
-    color:white;\
-\
-    font-size:1.15rem;\
-\
-    line-height:1.9;\
-\
-    opacity:0;\
-\
-    transition:.7s;\
-\
-\}\
-\
-/* ---------- CAT ---------- */\
-\
-.cat\{\
-\
-    position:absolute;\
-\
-    bottom:-40px;\
-\
-    left:-20px;\
-\
-    width:340px;\
-\
-    height:340px;\
-\
-    z-index:5;\
-\
-\}\
-\
-.head\{\
-\
-    position:absolute;\
-\
-    bottom:0;\
-\
-    width:320px;\
-\
-    height:250px;\
-\
-    background:#101010;\
-\
-    border-radius:55% 55% 45% 45%;\
-\}\
-\
-.ear\{\
-\
-    position:absolute;\
-\
-    width:90px;\
-\
-    height:110px;\
-\
-    background:#101010;\
-\
-    clip-path:polygon(50% 0%,0% 100%,100% 100%);\
-\}\
-\
-.left\{\
-\
-    left:15px;\
-\
-    top:25px;\
-\
-\}\
-\
-.right\{\
-\
-    right:15px;\
-\
-    top:25px;\
-\
-\}\
-\
-.eye\{\
-\
-    position:absolute;\
-\
-    width:38px;\
-\
-    height:38px;\
-\
-    background:#ffe600;\
-\
-    border-radius:50%;\
-\
-    top:90px;\
-\
-    animation:blink 6s infinite;\
-\}\
-\
-.left-eye\{\
-\
-    left:90px;\
-\
-\}\
-\
-.right-eye\{\
-\
-    right:90px;\
-\
-\}\
-\
-@keyframes blink\{\
-\
-    0%,45%,55%,100%\{\
-\
-        transform:scaleY(1);\
-\
-    \}\
-\
-    50%\{\
-\
-        transform:scaleY(.05);\
-\
-    \}\
-\
-\}\
-\
-.nose\{\
-\
-    position:absolute;\
-\
-    width:18px;\
-\
-    height:14px;\
-\
-    background:#ff8fa6;\
-\
-    left:50%;\
-\
-    top:145px;\
-\
-    transform:translateX(-50%);\
-\
-    border-radius:50%;\
-\}\
-\
-/* ---------- MOBILE ---------- */\
-\
-@media(max-width:600px)\{\
-\
-.container\{\
-\
-    padding:30px 22px;\
-\
-\}\
-\
-h1\{\
-\
-    font-size:1.5rem;\
-\
-\}\
-\
-button\{\
-\
-    width:100%;\
-\
-    font-size:16px;\
-\
-\}\
-\
-.cat\{\
-\
-    width:240px;\
-\
-    height:240px;\
-\
-    opacity:.5;\
-\
-\}\
-\
-.moon\{\
-\
-    width:90px;\
-\
-    height:90px;\
-\
-\}\
-\
-\}}
+body{
+    font-family:'Poppins',sans-serif;
+    min-height:100vh;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:linear-gradient(
+        180deg,
+        #06162f,
+        #0a2956,
+        #103b74,
+        #184f96
+    );
+}
+
+/* ---------- STARS ---------- */
+
+.stars{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+}
+
+.stars::before,
+.stars::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background-image:
+    radial-gradient(white 1px,transparent 1px),
+    radial-gradient(#8ecbff 1px,transparent 1px);
+
+    background-size:90px 90px;
+
+    opacity:.45;
+
+    animation:twinkle 5s infinite alternate;
+}
+
+.stars::after{
+
+    background-size:140px 140px;
+
+    opacity:.25;
+
+    animation-duration:8s;
+}
+
+@keyframes twinkle{
+
+    from{
+
+        opacity:.2;
+
+    }
+
+    to{
+
+        opacity:.65;
+
+    }
+
+}
+
+/* ---------- MOON ---------- */
+
+.moon{
+
+    position:absolute;
+
+    top:70px;
+
+    right:70px;
+
+    width:120px;
+
+    height:120px;
+
+    border-radius:50%;
+
+    background:#fff9d9;
+
+    box-shadow:
+
+    0 0 40px #fff,
+
+    0 0 90px #ffeaa7;
+
+}
+
+/* ---------- GLASS CARD ---------- */
+
+.container{
+
+    width:min(92%,470px);
+
+    padding:40px;
+
+    border-radius:28px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.15);
+
+    text-align:center;
+
+    z-index:20;
+
+    animation:card 1s ease;
+}
+
+@keyframes card{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+h1{
+
+    color:white;
+
+    font-size:2rem;
+
+    margin-bottom:15px;
+
+}
+
+.subtitle{
+
+    color:#c7e6ff;
+
+    margin-bottom:35px;
+
+    line-height:1.6;
+
+}
+
+/* ---------- BUTTON ---------- */
+
+button{
+
+    border:none;
+
+    cursor:pointer;
+
+    padding:18px 40px;
+
+    border-radius:60px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    color:white;
+
+    background:linear-gradient(135deg,#4ea7ff,#245fff);
+
+    transition:.35s;
+
+    box-shadow:
+
+    0 0 30px rgba(84,165,255,.5);
+
+    animation:pulse 2s infinite;
+}
+
+button:hover{
+
+    transform:translateY(-4px) scale(1.04);
+
+    box-shadow:
+
+    0 0 40px rgba(84,165,255,.8);
+
+}
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.03);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+#quoteBox{
+
+    margin-top:35px;
+
+    min-height:170px;
+
+}
+
+#quote{
+
+    color:white;
+
+    font-size:1.15rem;
+
+    line-height:1.9;
+
+    opacity:0;
+
+    transition:.7s;
+
+}
+
+/* ---------- CAT ---------- */
+
+.cat{
+
+    position:absolute;
+
+    bottom:-40px;
+
+    left:-20px;
+
+    width:340px;
+
+    height:340px;
+
+    z-index:5;
+
+}
+
+.head{
+
+    position:absolute;
+
+    bottom:0;
+
+    width:320px;
+
+    height:250px;
+
+    background:#101010;
+
+    border-radius:55% 55% 45% 45%;
+}
+
+.ear{
+
+    position:absolute;
+
+    width:90px;
+
+    height:110px;
+
+    background:#101010;
+
+    clip-path:polygon(50% 0%,0% 100%,100% 100%);
+}
+
+.left{
+
+    left:15px;
+
+    top:25px;
+
+}
+
+.right{
+
+    right:15px;
+
+    top:25px;
+
+}
+
+.eye{
+
+    position:absolute;
+
+    width:38px;
+
+    height:38px;
+
+    background:#ffe600;
+
+    border-radius:50%;
+
+    top:90px;
+
+    animation:blink 6s infinite;
+}
+
+.left-eye{
+
+    left:90px;
+
+}
+
+.right-eye{
+
+    right:90px;
+
+}
+
+@keyframes blink{
+
+    0%,45%,55%,100%{
+
+        transform:scaleY(1);
+
+    }
+
+    50%{
+
+        transform:scaleY(.05);
+
+    }
+
+}
+
+.nose{
+
+    position:absolute;
+
+    width:18px;
+
+    height:14px;
+
+    background:#ff8fa6;
+
+    left:50%;
+
+    top:145px;
+
+    transform:translateX(-50%);
+
+    border-radius:50%;
+}
+
+/* ---------- MOBILE ---------- */
+
+@media(max-width:600px){
+
+.container{
+
+    padding:30px 22px;
+
+}
+
+h1{
+
+    font-size:1.5rem;
+
+}
+
+button{
+
+    width:100%;
+
+    font-size:16px;
+
+}
+
+.cat{
+
+    width:240px;
+
+    height:240px;
+
+    opacity:.5;
+
+}
+
+.moon{
+
+    width:90px;
+
+    height:90px;
+
+}
+
+}
