@@ -7,8 +7,6 @@ const messages = [
 
 "Parang ang dali ngumiti kapag ikaw ang dahilan.",
 
-"Hindi ko alam kung paano, pero lagi kang nasa isip ko.",
-
 "You're prettier than you'll ever realize.",
 
 "Ang cute mo kahit wala kang ginagawa.",
@@ -27,7 +25,7 @@ const messages = [
 
 "Di mo siguro napapansin, pero you make people's day better.",
 
-"Kung may favorite notification ako, pangalan mo yun.",
+"Kung may favorite notification ako, pangalan mo yun yiee HAHAHAHA.",
 
 "Your laugh is honestly one of my favorite sounds.",
 
@@ -35,15 +33,9 @@ const messages = [
 
 "Erelah, thank you for existing.",
 
-"Kung may pipiliin akong kasama habang pinapanood ang sunset, ikaw yun.",
-
 "I still get happy whenever I see your name.",
 
-"Mas maganda ka pa sa favorite sunset ko.",
-
-"I don't think you realize how beautiful you are.",
-
-"Ang ganda mong tignan, pero mas maganda yung puso mo.",
+"I don't think you realize how beautiful you are. Kaya i-realize mona rawr",
 
 "Everything feels calmer whenever you're around.",
 
@@ -93,9 +85,9 @@ const messages = [
 
 "Being around you feels like home.",
 
-"Kung alam mo lang kung ilang beses kitang gustong i-message.",
+"Kung alam mo lang kung ilang beses kitang gustong i-message ay gagi kasama ba toh HAHAHAHAH",
 
-"Sa dami ng tao sa mundo, ikaw pa rin ang hinahanap ng mata ko aray mo parka.",
+"Sa dami ng tao sa mundo, ikaw pa rin ang hinahanap ng mata ko aray mo PAKAK.",
 
 "Ang saya ng araw ko kapag nakikita kitang masaya.",
 
@@ -115,7 +107,7 @@ const messages = [
 
 "Erelah, I really like you.",
 
-"And if no one has told you today... ang ganda mo.",
+"Lowkey ang hirap pala neto gawin HAHAHAH",
 
 "I love you. ❤️"
 
